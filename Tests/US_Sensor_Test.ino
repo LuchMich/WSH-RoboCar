@@ -1,6 +1,6 @@
 #include <HCSR04.h>
  
-HCSR04 hc(2, 3); //initialisation class HCSR04 (trig pin , echo pin)
+HCSR04 hc(A4, A5); //initialisation class HCSR04 (trig pin , echo pin)
  
 void setup()
 { 
@@ -12,4 +12,3 @@ void loop()
   Serial.println( hc.dist() ); //return current distance (cm) in serial
   delay(60);                   // we suggest to use over 60ms measurement cycle, in order to prevent trigger signal to the echo signal.
 }
- 
