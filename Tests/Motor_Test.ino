@@ -1,4 +1,4 @@
-//define motor pins
+//define constants for motor pins
 #define PIN_MOT_IN1 5
 #define PIN_MOT_IN2 6
 #define PIN_MOT_IN3 10
